@@ -1,0 +1,46 @@
+<!doctype html>
+
+<html>
+
+    <head>
+        <title>Formulários</title>
+        <meta charset="utf-8"/>
+    </head>
+
+    <body>
+        <!-- tag INPUT para a entrada em um determinado TYPE  -->
+        <!-- os tipos podem ser:
+            * TEXT,
+            * PASSWORD,
+            * BUTTON (com um determinado VALUE),
+            * RADIO,
+            * CHECKBOX,
+            * SUBMIT (dados serão enviados para processamento),
+        -->
+        <form>
+            <!-- Especificando o NAME da tag INPUT, é possível submeter os dados dessa entrada por uma tag do tipo SUBMIT (vide url alterada com os dados transmitidos)  -->
+            Login:<br>
+            <input type="text" name="login"><br>
+            Senha:<br>
+            <input type="password" name="password"><br>
+            Sexo:<br>
+            <input type="radio" name="sexo">Masculino<br>
+            <input type="radio" name="sexo">Feminino<br>
+            Interesses:<br>
+            <input type="checkbox">Futebol<br>
+            <input type="checkbox">Cursos<br>
+            <input type="checkbox">Eletrônicos<br>
+            Estado:<br>
+            <select>
+                <option>SP</option>
+                <option>RJ</option>
+                <option>MG</option>
+                <option>ES</option>
+            </select><br>
+            Observações<br>
+            <textarea></textarea><br>
+            <input type="submit" value="Cadastrar!">
+        </form>
+    </body>
+
+</html>
