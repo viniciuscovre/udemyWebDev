@@ -1,0 +1,54 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <title>Formatação de Textos 2</title>
+    <meta charset="utf-8" />
+
+    <style type="text/css">
+
+        p {
+            font-size: 30px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .texto {
+            font-size: 25px;
+        }
+
+        .negrito {
+            font-weight: bold;
+            /* font-weight: normal; ==> sem formatação */
+            font-weight: 900; /* podemos escolher o nível de bold (de 100 até 900) */
+        }
+
+        .estilo {
+            font-style: italic;
+            /* font-style: oblique;  */ /* um pouco mais deitado do que o ITALIC */
+        }
+
+        .texto-padrao {
+            font: bold 40px "Palestino Linotype", "Book Antiqua", Palestino, serif;
+        }
+
+        .formatacao {
+            text-decoration: underline;
+            text-decoration: overline;
+            text-decoration: line-through;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <h1>Formatação de Textos</h1>
+        <p class="texto">Lorem ipsum dolor sit amet, <span class="formatacao">consectetur adipiscing elit</span>. Phasellus turpis sapien, feugiat vitae gravida sit amet, sodales eu odio. Phasellus sagittis eu nulla non euismod.</p>
+        <p class="negrito">Contaúdo 1</p>
+        <p>Contaúdo 2</p>
+        <p class="estilo">Contaúdo 3</p>
+        <p class="texto-padrao">Contaúdo 4</p>
+</body>
+
+</html>

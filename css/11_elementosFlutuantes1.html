@@ -1,0 +1,66 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <title>Elementos Flutuantes</title>
+    <meta charset="utf-8" />
+
+    <style type="text/css">
+
+        #resumo-noticia {
+            border: 1px solid gray;
+            width: 300px;
+            height: 300px;
+            float: left;
+            margin: 10px;
+        }
+
+        .clear {
+        /* Utilizado para limpar um fluxo que já está flutuando */
+            clear: both;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div id="resumo-noticia">
+        <h2>Elemento Flutuante 1</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dignissim magna nibh, ac accumsan metus iaculis sed. Pellentesque
+        suscipit lorem at diam facilisis fringilla. Etiam eleifend est vitae leo condimentum, sed mattis lorem consectetur.
+        Donec dapibus mauris et nisl congue sollicitudin. Cras ut felis non nibh aliquam malesuada. Nulla lobortis sodales
+        condimentum. Suspendisse potenti. Proin varius dictum augue. Nulla facilisis sagittis nisl et viverra. Mauris in
+        gravida libero</p>
+    </div>
+
+    <div id="resumo-noticia">
+        <h2>Elemento Flutuante 2</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dignissim magna nibh, ac accumsan metus iaculis sed. Pellentesque
+        suscipit lorem at diam facilisis fringilla. Etiam eleifend est vitae leo condimentum, sed mattis lorem consectetur.
+        Donec dapibus mauris et nisl congue sollicitudin. Cras ut felis non nibh aliquam malesuada. Nulla lobortis sodales
+        condimentum. Suspendisse potenti. Proin varius dictum augue. Nulla facilisis sagittis nisl et viverra. Mauris in
+        gravida libero</p>
+    </div>
+
+    <!-- Com o clear, essa div não fica ao lado das divs anteriores, por limpou o fluxo flutuante -->
+    <div class="clear">
+         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dignissim magna nibh, ac accumsan metus iaculis sed. Pellentesque
+        suscipit lorem at diam facilisis fringilla. Etiam eleifend est vitae leo condimentum, sed mattis lorem consectetur.
+        Donec dapibus mauris et nisl congue sollicitudin. Cras ut felis non nibh aliquam malesuada. Nulla lobortis sodales
+        condimentum. Suspendisse potenti. Proin varius dictum augue. Nulla facilisis sagittis nisl et viverra. Mauris in
+        gravida libero
+         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dignissim magna nibh, ac accumsan metus iaculis sed. Pellentesque
+        suscipit lorem at diam facilisis fringilla. Etiam eleifend est vitae leo condimentum, sed mattis lorem consectetur.
+        Donec dapibus mauris et nisl congue sollicitudin. Cras ut felis non nibh aliquam malesuada. Nulla lobortis sodales
+        condimentum. Suspendisse potenti. Proin varius dictum augue. Nulla facilisis sagittis nisl et viverra. Mauris in
+        gravida libero
+    </div>
+
+    <div>Todos os direitos reservados</div>
+
+</body>
+
+</html>

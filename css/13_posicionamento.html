@@ -1,0 +1,84 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <title>Posicionamento</title>
+    <meta charset="utf-8" />
+
+    <style type="text/css">
+
+        body {
+            background: #61bd8c;
+            padding: 10px;
+        }
+
+        #conteudo-principal {
+            background: #ffffff;
+            padding: 10px;
+            width: 600px;
+            margin: 30px auto; /* margem lateral automática */
+            height: 2500px;
+            margin-top: 120px; /* por causa do menu fixed, onde sabemos que ele é uma caida de 100px de altuda */
+            /* position: relative; */
+        }
+
+        .caixa {
+            background: #1e6f44;
+            width: 100px;
+            height: 100px;
+            color: white;
+            padding: 5px;
+        }
+
+        #relativo {
+            /* Alinhar a div relativa a ela mesma */
+            position: relative;
+            /* Movimentamos a div em 30px da esquerda a partir da posição relativa dela mesma */
+            left: -30px;
+            top: 3px;
+            width: 660px;
+        }
+
+        #absoluta { /* Posição absoluta em relação ao seu parente mais próximo, que tem a posição */
+            /* Ele deixa de preencher o fluxo padrão do elemento */
+            position: absolute;
+            bottom: 0;
+            right: 30px;
+        }
+
+        #fixo {
+            /* Se comporta da mesma forma que o absolute, com a diferença que a posição fica não fica posicionada em relação ao seu parente mais próximo, mas sim em relação à viewport do browser */
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: black;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div id="conteudo-principal">
+
+        <h1>Posicionamento</h1>
+
+        <h4>Relative</h4>
+        <div class="caixa" id="relativo">Relative</div>
+
+        <!-- Essa div se comporta como se não estivesse mais dentro da div conteudo-principal -->
+        <h4>Absolute</h4>
+        <!-- Posição absoluta em relação ao body, já que o conteudo-principal não tem position) -->
+        <div class="caixa" id="absoluta">Absolute</div>
+
+        <h4>Fixed</h4>
+        <div class="caixa" id="fixo">Fixed</div>
+
+    </div>
+
+</body>
+
+</html>

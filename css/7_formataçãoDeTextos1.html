@@ -1,0 +1,44 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <title>Formatação de Textos 1</title>
+    <meta charset="utf-8" />
+
+    <style type="text/css">
+
+        div {
+            font-size: 20px;
+        }
+
+        .texto {
+            /* 16px é o tamanho padrão utilizado pela maioria dos browsers  */
+
+            font-size: 2em;
+
+            /* font-size: 100%;  /* Tamanho default  */
+            /* font-size: 200%;  /* Dobro do tamanho default  */
+            /* font-size: 2em;  /* Dobro do tamanho da tag "pai" */
+            /* font-size: 1em;  /* Mesmo tamanho da tag "pai" */
+
+            /* EM define de tamanho proporcional ao elemento externo */
+
+            /* Em suma: px, %, em */
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Formatação de Textos</h1>
+    <div>
+        <p class="texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus turpis sapien, feugiat vitae gravida sit amet, sodales eu odio. Phasellus sagittis eu nulla non euismod.</p>
+        <p>Contaúdo 1</p>
+        <p>Contaúdo 2</p>
+    </div>
+    <!-- O primeiro P (da classe ".texto") está dentro de DIV. A font-size assumida será a definida em ".texto". -->
+    <!-- Caso não tivesse font-size definida em P, seria adotada a font-size definida em DIV -->
+</body>
+
+</html>
